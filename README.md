@@ -46,7 +46,7 @@ You can see that the image has been moved according to the position of the note.
 
 Of course, you can use this plugin with several notes.
 
-![Sample Image](doc/d01.png)
+![Sample Image](doc/8.png)
 
 License
 ---------------
