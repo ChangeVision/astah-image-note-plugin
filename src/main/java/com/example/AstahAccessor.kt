@@ -7,12 +7,48 @@ import com.change_vision.jude.api.inf.model.*
 import com.change_vision.jude.api.inf.presentation.INodePresentation
 import com.change_vision.jude.api.inf.project.ProjectAccessor
 import java.awt.geom.Point2D
-import javax.swing.JOptionPane
+import java.lang.StringBuilder
 
 const val white = "#FFFFFF"
 
 object AstahAccessor {
     private val projectAccessor: ProjectAccessor = AstahAPI.getAstahAPI().projectAccessor
+
+    fun writeTaggedValueInDefinition(element: IElement, key : String , value: String) {
+        if (element !is INamedElement)
+            throw error("")
+
+        val otherDefinitions = element.definition.split(System.getProperty("line.separator")).filter {
+            !it.startsWith("#$key")
+        }
+        val definition = StringBuilder()
+
+        otherDefinitions.forEach {
+            definition.append(it)
+            definition.append(System.getProperty("line.separator"))
+        }
+        definition.append("#$key = $value")
+
+        try {
+            TransactionManager.beginTransaction()
+            element.definition = definition.toString()
+            TransactionManager.endTransaction()
+        } catch (e : Exception) {
+            e.printStackTrace()
+            if (TransactionManager.isInTransaction()) {
+                TransactionManager.abortTransaction()
+            }
+        }
+    }
+
+    fun readTaggedValueInDefinition(element: IElement, key : String) : String? {
+        if (element !is INamedElement)
+            throw error("")
+
+        return element.definition.split(System.getProperty("line.separator")).firstOrNull() {
+            it.startsWith("#$key")
+        }?.removePrefix("#$key = ")
+    }
 
     fun setLocation(node: INodePresentation, location: Point2D) {
         try {

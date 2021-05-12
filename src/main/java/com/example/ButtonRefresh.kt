@@ -23,7 +23,7 @@ class ButtonRefresh(private val type: RefreshBaseType) : JButton()  {
         val allImages = allNodePresentation.filter { it.type == "Image" }
 
         allNotes.forEach { note ->
-            val storedRelation: String? = AstahAccessor.readTaggedValue(note.model, IMAGE_KEY)
+            val storedRelation: String? = AstahAccessor.readTaggedValueInDefinition(note.model, IMAGE_KEY)
             val storedImageIDs = if (storedRelation != null) {
                 JsonSaveDataConverter.convertFromJsonToImages(storedRelation)
             } else {

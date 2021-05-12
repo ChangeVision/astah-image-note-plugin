@@ -20,7 +20,7 @@ class ButtonAssociate : JButton("Associate") {
             currentRelations[note] = containedImages
         }
         allNotes.forEach { note ->
-            val storedRelation = AstahAccessor.readTaggedValue(note.model, IMAGE_KEY)
+            val storedRelation = AstahAccessor.readTaggedValueInDefinition(note.model, IMAGE_KEY)
             if (storedRelation != null) {
                 storedRelations[note] = JsonSaveDataConverter.convertFromJsonToImages(storedRelation)
             } else {
@@ -32,7 +32,7 @@ class ButtonAssociate : JButton("Associate") {
             if (updateRelation.isNotEmpty()) {
                 AstahAccessor.setColor(note, white)
                 updatedRelations[note] = updateRelation
-                AstahAccessor.writeTaggedValue(note.model, IMAGE_KEY,
+                AstahAccessor.writeTaggedValueInDefinition(note.model, IMAGE_KEY,
                         JsonSaveDataConverter.convertFromImagesToJSON(updateRelation.toTypedArray()))
             }
         }
