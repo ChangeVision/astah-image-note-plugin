@@ -9,7 +9,7 @@ class ButtonAssociate : JButton("Associate") {
         if (diagram == null)
             return
         val allNodePresentation = diagram.presentations.filterIsInstance<INodePresentation>()
-        val allNotes = allNodePresentation.filter { it.type == "Note" }
+        val allNotes = allNodePresentation.filter { it.type == "Note" || it.type == "Comment" }
         val allImages = allNodePresentation.filter { it.type == "Image" }
         val currentRelations = mutableMapOf<INodePresentation, List<INodePresentation>>()
         val storedRelations = mutableMapOf<INodePresentation, List<String>>()

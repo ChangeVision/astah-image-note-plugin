@@ -19,7 +19,7 @@ class ButtonRefresh(private val type: RefreshBaseType) : JButton()  {
         if (diagram == null)
             return
         val allNodePresentation = diagram.presentations.filterIsInstance<INodePresentation>()
-        val allNotes = allNodePresentation.filter { it.type == "Note" }
+        val allNotes = allNodePresentation.filter { it.type == "Note" || it.type == "Comment" }
         val allImages = allNodePresentation.filter { it.type == "Image" }
 
         allNotes.forEach { note ->
