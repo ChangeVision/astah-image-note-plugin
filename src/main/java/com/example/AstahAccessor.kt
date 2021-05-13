@@ -45,7 +45,7 @@ object AstahAccessor {
         if (element !is INamedElement)
             throw error("")
 
-        return (element.definition ?: "").split(System.getProperty("line.separator")).firstOrNull() {
+        return (element.definition ?: "").split(System.getProperty("line.separator")).firstOrNull {
             it.startsWith("#$key")
         }?.removePrefix("#$key = ")
     }
