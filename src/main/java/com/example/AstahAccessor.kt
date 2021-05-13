@@ -18,7 +18,7 @@ object AstahAccessor {
         if (element !is INamedElement)
             throw error("")
 
-        val otherDefinitions = element.definition.split(System.getProperty("line.separator")).filter {
+        val otherDefinitions = (element.definition ?: "").split(System.getProperty("line.separator")).filter {
             !it.startsWith("#$key")
         }
         val definition = StringBuilder()
@@ -45,7 +45,7 @@ object AstahAccessor {
         if (element !is INamedElement)
             throw error("")
 
-        return element.definition.split(System.getProperty("line.separator")).firstOrNull() {
+        return (element.definition ?: "").split(System.getProperty("line.separator")).firstOrNull() {
             it.startsWith("#$key")
         }?.removePrefix("#$key = ")
     }
