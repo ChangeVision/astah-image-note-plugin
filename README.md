@@ -4,7 +4,7 @@ Astah Image Note Plugin
 
 Version
 ----------------
-1.0
+1.1
 
 Available for
 ----------------
@@ -36,13 +36,9 @@ Then, move the image onto the note.
 ![Sample Image](doc/image003.png)
 Remark that a note is required to cover the image completely. With this status, push "Associate" button in the Image Note tab.
 ![Sample Image](doc/image004.png)
-You will see that the color of the note is changed, indicating that the note is associated with an image.  Push "Refresh based on Image".
+You will see that the color of the note is changed, indicating that the note is associated with an image. Move the image to some extent.
 ![Sample Image](doc/image005.png)
-You can recognize that the size of the note is adjusted according to the associated image.  Next, try to move a note.
-![Sample Image](doc/image006.png)
-At this point, push "Refresh based on Note" button.
-You can see that the image has been moved according to the position of the note.
-![Sample Image](doc/image007.png)
+You can recognize that the size of the note is adjusted according to the associated image.  
 
 Of course, you can use this plugin with several notes.
 

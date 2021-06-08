@@ -4,7 +4,7 @@ astah* Image Note プラグイン
 
 Version
 ----------------
-1.0
+1.1
 
 Available for
 ----------------
@@ -35,14 +35,8 @@ How to install
 ![Sample Image](doc/image003.png)
 ノートが完全に画像を含むように大きさを調整してください。この状態で，Image NoteタブにあるAssociateボタンを押します。
 ![Sample Image](doc/image004.png)
-色が変わってノートと画像が紐付けられたことが分かります。この状態で，「Refresh based on Image」を押してみましょう。
+色が変わってノートと画像が紐付けられたことが分かります。この状態で，画像を移動してみましょう。
 ![Sample Image](doc/image005.png)
-ノートの大きさがちょうど画像の大きさに調整されたのが分かると思います。
-ここで，ノートの方を移動してみましょう。
-![Sample Image](doc/image006.png)
-この状態で，「Refresh based on Note」ボタンを押してください。
-次のように画像が自動的にノートの位置に移動することが確認できると思います。
-![Sample Image](doc/image007.png)
 
 ノートがたくさんに増えても大丈夫です。
 ![Sample Image](doc/image000.png)
