@@ -19,7 +19,7 @@ How to install
 ----------------
 
 0. Download .jar file from
-   https://github.com/ChangeVision/astah-image-note-plugin/releases/download/v1.0/astah-image-note-1.0-SNAPSHOT.jar
+   https://github.com/ChangeVision/astah-image-note-plugin/releases/download/v1.1/astah-image-note-1.1.jar
 1. Launch Astah and drag the downloaded .jar file to an open instance of Astah. A pop-up will appear asking you to confirm installation, choose [Yes].
 2. If the pop-up opens, restart Astah and open any project.
 3. Now you will have [Image Note] Tab in the Extension View below the Diagram Editor.
