@@ -4,7 +4,7 @@ Astah Image Note Plugin
 
 Version
 ----------------
-1.1
+1.2
 
 Available for
 ----------------
@@ -28,17 +28,17 @@ How to install
 How to use
 ----------------
 ### Associating a note with an image
-First assume you prepare a note that you want to use it with an image.
-![Sample Image](doc/image001.png)
-Here, you can drag and drop an image as follows.
+- First assume you prepare a note that you want to use it with an image.
+  - ![Sample Image](doc/image001.png)
+- Here, you can drag and drop an image as follows.
 ![Sample Image](doc/image002.png)
-Then, move the image onto the note.
-![Sample Image](doc/image003.png)
-Remark that a note is required to cover the image completely. With this status, push "Associate" button in the Image Note tab.
-![Sample Image](doc/image004.png)
-You will see that the color of the note is changed, indicating that the note is associated with an image. Move the image to some extent.
-![Sample Image](doc/image005.png)
-You can recognize that the size of the note is adjusted according to the associated image.  
+- Then, move the image onto the note.
+  - ![Sample Image](doc/image003.png)
+- Remark that a note is required to cover the image completely. With this status, push "Associate" button in the Image Note tab.
+  - ![Sample Image](doc/image004.png)
+- You will see that the color of the note is changed, indicating that the note is associated with an image. Move the image to some extent.
+  - ![Sample Image](doc/image005.png)
+- You can recognize that the size of the note is adjusted according to the associated image.  
 
 Of course, you can use this plugin with several notes.
 

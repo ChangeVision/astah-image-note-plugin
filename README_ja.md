@@ -4,7 +4,7 @@ astah* Image Note プラグイン
 
 Version
 ----------------
-1.1
+1.2
 
 Available for
 ----------------
@@ -27,16 +27,16 @@ How to install
 使い方
 ----------------
 ### ノートとの関連付け
-はじめに，画像を使いたいノートを次のように準備したとします。
-![Sample Image](doc/image001.png)
-ここで，ノートに使いたい画像を次のようにドラッグアンドドロップしたとします。
-![Sample Image](doc/image002.png)
-つぎに，ノートの上に画像を移動します。
-![Sample Image](doc/image003.png)
-ノートが完全に画像を含むように大きさを調整してください。この状態で，Image NoteタブにあるAssociateボタンを押します。
-![Sample Image](doc/image004.png)
-色が変わってノートと画像が紐付けられたことが分かります。この状態で，画像を移動してみましょう。
-![Sample Image](doc/image005.png)
+- はじめに，画像を使いたいノートを次のように準備したとします。
+  - ![Sample Image](doc/image001.png)
+- ここで，ノートに使いたい画像を次のようにドラッグアンドドロップしたとします。
+  - ![Sample Image](doc/image002.png)
+- つぎに，ノートの上に画像を移動します。
+  - ![Sample Image](doc/image003.png)
+- ノートが完全に画像を含むように大きさを調整してください。この状態で，Image NoteタブにあるAssociateボタンを押します。
+  - ![Sample Image](doc/image004.png)
+- 色が変わってノートと画像が紐付けられたことが分かります。この状態で，画像を移動してみましょう。
+  - ![Sample Image](doc/image005.png)
 
 ノートがたくさんに増えても大丈夫です。
 ![Sample Image](doc/image000.png)
