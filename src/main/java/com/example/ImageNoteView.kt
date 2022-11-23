@@ -24,11 +24,7 @@ class ImageNoteView : JPanel(), IPluginExtraTabView, ProjectEventListener, Actio
         val panelButtons = JPanel()
         panelButtons.layout = GridLayout(1, 2)
         panelButtons.add(buttonAssociate)
-        panelButtons.add(buttonRefreashBasedOnNote)
-        panelButtons.add(buttonRefreashBasedOnImage)
         buttonAssociate.addActionListener(this)
-        buttonRefreashBasedOnNote.addActionListener(this)
-        buttonRefreashBasedOnImage.addActionListener(this)
         add(panelButtons)
         addProjectEventListener()
     }
@@ -46,12 +42,6 @@ class ImageNoteView : JPanel(), IPluginExtraTabView, ProjectEventListener, Actio
         when (e.source) {
             buttonAssociate -> {
                 buttonAssociate.push(AstahAccessor.getCurrentDiagram())
-            }
-            buttonRefreashBasedOnNote -> {
-                buttonRefreashBasedOnNote.push(AstahAccessor.getCurrentDiagram())
-            }
-            buttonRefreashBasedOnImage -> {
-                buttonRefreashBasedOnImage.push(AstahAccessor.getCurrentDiagram())
             }
         }
     }
