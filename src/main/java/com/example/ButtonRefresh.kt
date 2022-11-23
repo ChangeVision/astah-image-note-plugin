@@ -37,11 +37,11 @@ class ButtonRefresh(private val type: RefreshBaseType) : JButton()  {
                 }
             }
             if (storedImages.isNotEmpty()) {
-                val minX = storedImages.minBy { it.location.x }!!.location.x
-                val minY = storedImages.minBy { it.location.y }!!.location.y
-                val maxXElement = storedImages.maxBy { it.location.x + it.width }!!
+                val minX = storedImages.minByOrNull { it.location.x }!!.location.x
+                val minY = storedImages.minByOrNull { it.location.y }!!.location.y
+                val maxXElement = storedImages.maxByOrNull { it.location.x + it.width }!!
                 val maxX = maxXElement.location.x + maxXElement.width
-                val maxYElement = storedImages.maxBy { it.location.y + it.height }!!
+                val maxYElement = storedImages.maxByOrNull { it.location.y + it.height }!!
                 val maxY = maxYElement.location.y + maxYElement.height
 
                 when (type) {
